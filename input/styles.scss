@@ -1,0 +1,20 @@
+// Fonts
+@font-face {
+    font-family: 'Fraunces-VariableFont_SOFT,WONK,opsz,wght';
+    src: url(../starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Manrope-VariableFont_wght';
+    src: url(../starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+$primary-font: 'Fraunces-VariableFont_SOFT,WONK,opsz,wght';
+$secondary-font: 'Manrope-VariableFont_wght';
+
+// Colors
+$dark-purple: #24053E;
+$gray: #584D62;
+$eucalyptus: #44FFA1;
+$ghost-white: #FCF8FF;
+$white: #FFFFFF;

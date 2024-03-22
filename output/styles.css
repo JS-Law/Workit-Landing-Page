@@ -1,3 +1,10 @@
-
+@font-face {
+  font-family: "Fraunces-VariableFont_SOFT,WONK,opsz,wght";
+  src: url(../starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+@font-face {
+  font-family: "Manrope-VariableFont_wght";
+  src: url(../starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
 
 /*# sourceMappingURL=styles.css.map */
