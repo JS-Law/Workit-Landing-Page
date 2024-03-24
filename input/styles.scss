@@ -35,9 +35,21 @@ img#phone{
 
 #header{
     background-color: $dark-purple;
+    padding: 1rem;
+    padding-top: 1.5rem;
     #nav{
         display: flex;
         justify-content: space-between;
+        a#apply{
+            font-family: $secondary-font;
+            text-decoration: none;
+            color: $ghost-white;
+            border-bottom: solid .2rem $white;
+            font-size: 16px;
+        }
+        a#apply:hover{
+            border-bottom: solid .2rem $eucalyptus;
+        }
     }
 }
 #heroCard{
@@ -47,9 +59,19 @@ img#phone{
     align-items: center;
     h2#slogan{
         text-align: center;
+        font-family: $primary-font;
+        font-size: 3rem;
+        font-weight: 500;
+        color: $white;
+        margin: 3rem;
     }
     img#phone{
         
+    }
+    span#underline{
+        // text-decoration: underline;
+        // text-decoration-color: $eucalyptus;
+        border-bottom: solid .2rem $eucalyptus;
     }
 }
 

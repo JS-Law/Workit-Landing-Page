@@ -22,10 +22,22 @@ img#phone {
 
 #header {
   background-color: #24053E;
+  padding: 1rem;
+  padding-top: 1.5rem;
 }
 #header #nav {
   display: flex;
   justify-content: space-between;
+}
+#header #nav a#apply {
+  font-family: "Manrope-VariableFont_wght";
+  text-decoration: none;
+  color: #FCF8FF;
+  border-bottom: solid 0.2rem #FFFFFF;
+  font-size: 16px;
+}
+#header #nav a#apply:hover {
+  border-bottom: solid 0.2rem #44FFA1;
 }
 
 #heroCard {
@@ -36,7 +48,16 @@ img#phone {
 }
 #heroCard h2#slogan {
   text-align: center;
+  font-family: "Fraunces-VariableFont_SOFT,WONK,opsz,wght";
+  font-size: 3rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 3rem;
 }
+#heroCard span#underline {
+  border-bottom: solid 0.2rem #44FFA1;
+}
+
 .listContainer {
   text-align: center;
 }
