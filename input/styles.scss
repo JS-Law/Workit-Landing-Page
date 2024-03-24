@@ -9,6 +9,7 @@
     src: url(../starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
 }
 
+
 $primary-font: 'Fraunces-VariableFont_SOFT,WONK,opsz,wght';
 $secondary-font: 'Manrope-VariableFont_wght';
 
@@ -18,5 +19,53 @@ $gray: #584D62;
 $eucalyptus: #44FFA1;
 $ghost-white: #FCF8FF;
 $white: #FFFFFF;
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 
+#bigSpringLeft, #smallSpringLeft, #springRight{
+    position: absolute;
+    display: none;
+}
 
+img#phone{
+    width: clamp(320px, 75vw, 441px);
+}
+
+#header{
+    background-color: $dark-purple;
+    #nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+#heroCard{
+    background-color: $dark-purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2#slogan{
+        text-align: center;
+    }
+    img#phone{
+        
+    }
+}
+
+.listContainer{
+    text-align: center;
+    #text{
+        display: none;
+    }
+}
+#authorImageCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    img#authorImage{
+        width: clamp(250px, 75vw, 250px);
+        mix-blend-mode: multiply;
+    }
+}
