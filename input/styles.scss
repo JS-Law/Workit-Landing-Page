@@ -23,14 +23,13 @@ $white: #FFFFFF;
     box-sizing: border-box;
     margin: 0;
 }
+body{
+    -webkit-font-smoothing: antialiased;
+}
 
 #bigSpringLeft, #smallSpringLeft, #springRight{
     position: absolute;
     display: none;
-}
-
-img#phone{
-    width: clamp(320px, 75vw, 441px);
 }
 
 #header{
@@ -57,21 +56,43 @@ img#phone{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom-left-radius: 100% 15%;
+    border-bottom-right-radius: 100% 15%;
     h2#slogan{
         text-align: center;
         font-family: $primary-font;
         font-size: 3rem;
         font-weight: 500;
+        // font-style: italic;
         color: $white;
-        margin: 3rem;
+        width: clamp(343px, 75vw, 344px);
+        margin-top: 2rem;
+
     }
     img#phone{
-        
+        width: clamp(320px, 75vw, 441px);
+        position: absolute;
+        top: 22rem;
+
     }
     span#underline{
-        // text-decoration: underline;
-        // text-decoration-color: $eucalyptus;
+        border-bottom: solid .2rem $white;
+    }
+    span#underline:hover{
         border-bottom: solid .2rem $eucalyptus;
+    }
+    button#learnMore{
+        color: $dark-purple;
+        background-color: $white;
+        outline: none;
+        padding-inline: 2rem;
+        padding-block: 1rem;
+        border: none;
+        margin-top: 2rem;
+        margin-bottom: 9rem;
+    }
+    button#learnMore:hover{
+        background-color: $eucalyptus;
     }
 }
 
