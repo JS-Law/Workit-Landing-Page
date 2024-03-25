@@ -3,6 +3,10 @@
   src: url(../starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
 }
 @font-face {
+  font-family: "Fraunces";
+  src: url(../starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+}
+@font-face {
   font-family: "Manrope-VariableFont_wght";
   src: url(../starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
 }
@@ -35,6 +39,7 @@ body {
   color: #FCF8FF;
   border-bottom: solid 0.2rem #FFFFFF;
   font-size: 16px;
+  font-weight: 500;
 }
 #header #nav a#apply:hover {
   border-bottom: solid 0.2rem #44FFA1;
@@ -47,14 +52,15 @@ body {
   align-items: center;
   border-bottom-left-radius: 100% 15%;
   border-bottom-right-radius: 100% 15%;
+  margin-bottom: 10rem;
 }
 #heroCard h2#slogan {
   text-align: center;
-  font-family: "Fraunces-VariableFont_SOFT,WONK,opsz,wght";
+  font-family: "Fraunces";
   font-size: 3rem;
   font-weight: 500;
   color: #FFFFFF;
-  width: clamp(343px, 75vw, 344px);
+  width: clamp(353px, 75vw, 354px);
   margin-top: 2rem;
 }
 #heroCard img#phone {
@@ -84,9 +90,19 @@ body {
 
 .listContainer {
   text-align: center;
+  font-family: "Fraunces-VariableFont_SOFT,WONK,opsz,wght";
+  font-weight: 500;
 }
 .listContainer #text {
   display: none;
+}
+.listContainer .num {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+.listContainer .item {
+  font-size: 1.4rem;
+  margin-bottom: 8rem;
 }
 
 #authorImageCard {

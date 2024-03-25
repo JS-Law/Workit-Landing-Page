@@ -3,7 +3,10 @@
     font-family: 'Fraunces-VariableFont_SOFT,WONK,opsz,wght';
     src: url(../starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
 }
-
+@font-face {
+    font-family: 'Fraunces';
+    src: url(../starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+}
 @font-face {
     font-family: 'Manrope-VariableFont_wght';
     src: url(../starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
@@ -12,7 +15,7 @@
 
 $primary-font: 'Fraunces-VariableFont_SOFT,WONK,opsz,wght';
 $secondary-font: 'Manrope-VariableFont_wght';
-
+$primary-font-alt: 'Fraunces';
 // Colors
 $dark-purple: #24053E;
 $gray: #584D62;
@@ -45,6 +48,7 @@ body{
             color: $ghost-white;
             border-bottom: solid .2rem $white;
             font-size: 16px;
+            font-weight: 500;
         }
         a#apply:hover{
             border-bottom: solid .2rem $eucalyptus;
@@ -58,14 +62,15 @@ body{
     align-items: center;
     border-bottom-left-radius: 100% 15%;
     border-bottom-right-radius: 100% 15%;
+    margin-bottom: 10rem;
+
     h2#slogan{
         text-align: center;
-        font-family: $primary-font;
+        font-family: $primary-font-alt;
         font-size: 3rem;
         font-weight: 500;
-        // font-style: italic;
         color: $white;
-        width: clamp(343px, 75vw, 344px);
+        width: clamp(353px, 75vw, 354px);
         margin-top: 2rem;
 
     }
@@ -98,8 +103,18 @@ body{
 
 .listContainer{
     text-align: center;
+    font-family: $primary-font;
+    font-weight: 500;
     #text{
         display: none;
+    }
+    .num{
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+    .item{
+        font-size: 1.4rem;
+        margin-bottom: 8rem;
     }
 }
 #authorImageCard{
