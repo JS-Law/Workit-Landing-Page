@@ -39,6 +39,7 @@ body{
     background-color: $dark-purple;
     padding: 1rem;
     padding-top: 1.5rem;
+
     #nav{
         display: flex;
         justify-content: space-between;
@@ -55,6 +56,14 @@ body{
         }
     }
 }
+
+.heroContainer{
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    position: relative; /* Establishes a positioning context */
+    width: 100vw; /* Ensures the container matches the viewport width */
+    margin-left: calc(50% - 50vw); /* Centers the container */
+
+}
 #heroCard{
     background-color: $dark-purple;
     display: flex;
@@ -63,6 +72,10 @@ body{
     border-bottom-left-radius: 100% 15%;
     border-bottom-right-radius: 100% 15%;
     margin-bottom: 10rem;
+
+    width: 120vw; /* Example: making the element 20% wider than the viewport */
+    position: relative; /* Allows for positioning adjustments */
+    left: -10vw; /* Shifts the element to be centered visually */
 
     h2#slogan{
         text-align: center;
@@ -77,8 +90,7 @@ body{
     img#phone{
         width: clamp(320px, 75vw, 441px);
         position: absolute;
-        top: 22rem;
-
+        top: 17.5rem;
     }
     span#underline{
         border-bottom: solid .2rem $white;
