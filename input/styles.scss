@@ -141,7 +141,44 @@ body{
     }
     img#authorImageMobile{
         width: clamp(250px, 75vw, 250px);
+        margin-top: 8rem;
+        z-index: -1;
 
+    }
+}
 
+.testCard{
+    display: flex;
+    background-color: $dark-purple;
+    color: $white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -3rem;
+    margin-inline: 3.5vw;
+    #testTitle{
+        font-family: $primary-font-alt;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    #bio{
+        font-family: $secondary-font;
+        margin: 2rem;
+        line-height: 1.5rem;
+        font-weight: 300;
+        font-size: .9rem;
+    }
+    button#applyBtn{
+        color: $dark-purple;
+        background-color: $white;
+        outline: none;
+        padding-inline: 2rem;
+        padding-block: 1rem;
+        border: none;
+
+        margin-bottom: 2rem;
+    }
+    button#applyBtn:hover{
+        background-color: $eucalyptus;
     }
 }

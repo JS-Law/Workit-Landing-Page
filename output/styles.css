@@ -127,6 +127,43 @@ body {
 }
 #authorImageCard img#authorImageMobile {
   width: clamp(250px, 75vw, 250px);
+  margin-top: 8rem;
+  z-index: -1;
+}
+
+.testCard {
+  display: flex;
+  background-color: #24053E;
+  color: #FFFFFF;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -3rem;
+  margin-inline: 3.5vw;
+}
+.testCard #testTitle {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.testCard #bio {
+  font-family: "Manrope-VariableFont_wght";
+  margin: 2rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.testCard button#applyBtn {
+  color: #24053E;
+  background-color: #FFFFFF;
+  outline: none;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+.testCard button#applyBtn:hover {
+  background-color: #44FFA1;
 }
 
 /*# sourceMappingURL=styles.css.map */
