@@ -40,6 +40,7 @@ body{
     background-color: $dark-purple;
     padding: 1rem;
     padding-top: 1.5rem;
+    transition: ease-in-out 0.3ms;
 
     #nav{
         display: flex;
@@ -77,21 +78,25 @@ body{
     width: 120vw; /* Example: making the element 20% wider than the viewport */
     position: relative; /* Allows for positioning adjustments */
     left: -10vw; /* Shifts the element to be centered visually */
-
+    
     h2#slogan{
         text-align: center;
         font-family: $primary-font-alt;
-        font-size: 3rem;
+        // font-size: 3rem;
+        font-size: clamp(3rem, 8vw, 4rem);
         font-weight: 500;
         color: $white;
-        width: clamp(353px, 75vw, 354px);
+        width: clamp(353px, 45vw, 573px);
         margin-top: 2rem;
 
     }
     img#phone{
-        width: clamp(320px, 75vw, 441px);
+        width: clamp(320px, 55vw, 441px);
         position: absolute;
         top: 17.5rem;
+        margin-left: 1.5rem;
+        // right: 2.25rem;
+        transition: ease-out 0.3s;
     }
     span#underline{
         border-bottom: solid .2rem $white;
@@ -108,6 +113,7 @@ body{
         border: none;
         margin-top: 2rem;
         margin-bottom: 9rem;
+        transition: ease-in-out 0.3s;
     }
     button#learnMore:hover{
         background-color: $eucalyptus;
@@ -194,4 +200,52 @@ footer#footer{
     #icons{
         display: none;
     }
+}
+
+
+// Mobile devices
+// List items are hidden
+// Author image is different
+// No SVG springs
+// No green highlighting
+@media (min-width: 375px) {
+
+
+}
+
+/* Large devices (tablets to small desktops) */
+@media (min-width: 540px) {
+    #header{
+        padding-top: 3rem;
+        padding: 2rem;
+
+        #nav{
+            
+            a#apply{
+                border-bottom: solid .2rem $eucalyptus;
+            }
+        }
+    }
+    #heroCard{
+        margin-bottom: 14rem;
+        button#learnMore{
+            margin-bottom: 12rem;
+        }
+        img#phone{
+            top: 21rem;
+            margin-left: auto;
+        }
+        span#underline{
+            border-bottom: solid .2rem $eucalyptus;
+        }
+        button#learnMore{
+            color: $dark-purple;
+            background-color: $eucalyptus;
+        }
+    }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 730px) {
+
 }

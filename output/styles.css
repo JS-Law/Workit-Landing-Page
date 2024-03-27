@@ -29,6 +29,7 @@ body {
   background-color: #24053E;
   padding: 1rem;
   padding-top: 1.5rem;
+  transition: ease-in-out 0.3ms;
 }
 #header #nav {
   display: flex;
@@ -68,16 +69,18 @@ body {
 #heroCard h2#slogan {
   text-align: center;
   font-family: "Fraunces";
-  font-size: 3rem;
+  font-size: clamp(3rem, 8vw, 4rem);
   font-weight: 500;
   color: #FFFFFF;
-  width: clamp(353px, 75vw, 354px);
+  width: clamp(353px, 45vw, 573px);
   margin-top: 2rem;
 }
 #heroCard img#phone {
-  width: clamp(320px, 75vw, 441px);
+  width: clamp(320px, 55vw, 441px);
   position: absolute;
   top: 17.5rem;
+  margin-left: 1.5rem;
+  transition: ease-out 0.3s;
 }
 #heroCard span#underline {
   border-bottom: solid 0.2rem #FFFFFF;
@@ -94,6 +97,7 @@ body {
   border: none;
   margin-top: 2rem;
   margin-bottom: 9rem;
+  transition: ease-in-out 0.3s;
 }
 #heroCard button#learnMore:hover {
   background-color: #44FFA1;
@@ -178,5 +182,34 @@ footer#footer #logo {
 footer#footer #icons {
   display: none;
 }
+
+/* Large devices (tablets to small desktops) */
+@media (min-width: 540px) {
+  #header {
+    padding-top: 3rem;
+    padding: 2rem;
+  }
+  #header #nav a#apply {
+    border-bottom: solid 0.2rem #44FFA1;
+  }
+  #heroCard {
+    margin-bottom: 14rem;
+  }
+  #heroCard button#learnMore {
+    margin-bottom: 12rem;
+  }
+  #heroCard img#phone {
+    top: 21rem;
+    margin-left: auto;
+  }
+  #heroCard span#underline {
+    border-bottom: solid 0.2rem #44FFA1;
+  }
+  #heroCard button#learnMore {
+    color: #24053E;
+    background-color: #44FFA1;
+  }
+}
+/* Extra large devices (large desktops) */
 
 /*# sourceMappingURL=styles.css.map */
