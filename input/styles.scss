@@ -182,3 +182,16 @@ body{
         background-color: $eucalyptus;
     }
 }
+
+footer#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #logo{
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+    }
+    #icons{
+        display: none;
+    }
+}

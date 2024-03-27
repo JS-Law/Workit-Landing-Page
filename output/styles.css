@@ -166,4 +166,17 @@ body {
   background-color: #44FFA1;
 }
 
+footer#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer#footer #logo {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+footer#footer #icons {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
