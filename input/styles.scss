@@ -119,21 +119,32 @@ body{
         background-color: $eucalyptus;
     }
 }
-
-.listContainer{
+.listContent{
+    // transition: ease-in 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-family: $primary-font;
-    font-weight: 500;
-    #text{
-        display: none;
-    }
-    .num{
-        margin-bottom: 2rem;
-        font-size: 1.1rem;
-    }
-    .item{
-        font-size: 1.4rem;
-        margin-bottom: 8rem;
+    .listContainer{
+        text-align: center;
+        font-family: $primary-font;
+        font-weight: 500;
+        // transition: ease-in 0.3s;
+        #text{
+            display: none;
+            transition: ease-in-out 0.3s;
+        }
+        .num{
+            // transition: ease-in 0.3s;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            // text-align: left;
+        }
+        .item{
+            transition: ease-in-out 0.3s;
+            font-size: 1.4rem;
+            margin-bottom: 8rem;
+        }
     }
 }
 #authorImageCard{
@@ -227,13 +238,17 @@ footer#footer{
         }
     }
     #heroCard{
-        margin-bottom: 14rem;
+        // margin-bottom: -4rem;
+        // overflow-y: hidden;
+        z-index: 1;
         button#learnMore{
             margin-bottom: 12rem;
+
         }
         img#phone{
             top: 21rem;
             margin-left: auto;
+            z-index: 1;
         }
         span#underline{
             border-bottom: solid .2rem $eucalyptus;
@@ -241,6 +256,70 @@ footer#footer{
         button#learnMore{
             color: $dark-purple;
             background-color: $eucalyptus;
+        }
+    }
+    #list{
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        // overflow-y: hidden; /* Prevents horizontal scrolling */
+        position: relative; /* Establishes a positioning context */
+        width: 100vw; /* Ensures the container matches the viewport width */
+        margin-left: calc(50% - 50vw); /* Centers the container */
+        z-index: -1;
+        .listContent{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: $ghost-white;
+            width: 120vw; /* Example: making the element 20% wider than the viewport */
+            position: relative; /* Allows for positioning adjustments */
+            left: -10vw; /* Shifts the element to be centered visually */
+            border-bottom-left-radius: 100% 15%;
+            border-bottom-right-radius: 100% 15%;
+            .listContainer{
+                padding-top: 12rem;
+                text-align: center;
+                font-weight: 500;
+                display: flex;
+                max-width: 573px;
+                align-items: center;
+                // justify-content: center;
+                // align-content: center;
+                
+                
+    
+                .num{
+                    margin-top: -1.4rem;
+                    font-size: 1.1rem;
+                    margin-right: 2rem;
+                    border: solid .1rem black;
+                    border-radius: 100%;
+                    padding: .5rem;
+                    padding-inline: 1rem;
+                }
+                .listCard{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 4rem;
+                    align-content: start;
+                    justify-content: start;
+                    align-items: start;
+                    max-width: 468px;
+                    .item{
+                        font-family: $primary-font-alt;
+                        font-size: 1.6rem;
+                        margin-bottom: 1rem;
+                        text-align: left;
+                    }
+                    #text{
+                        text-align: left !important;
+                        display: block;
+                        font-family: $secondary-font;
+                        font-weight: 300;
+                    }
+        
+                }
+            }
+    
         }
     }
 }

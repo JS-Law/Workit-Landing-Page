@@ -103,19 +103,27 @@ body {
   background-color: #44FFA1;
 }
 
-.listContainer {
+.listContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.listContent .listContainer {
   text-align: center;
   font-family: "Fraunces-VariableFont_SOFT,WONK,opsz,wght";
   font-weight: 500;
 }
-.listContainer #text {
+.listContent .listContainer #text {
   display: none;
+  transition: ease-in-out 0.3s;
 }
-.listContainer .num {
+.listContent .listContainer .num {
   margin-bottom: 2rem;
   font-size: 1.1rem;
 }
-.listContainer .item {
+.listContent .listContainer .item {
+  transition: ease-in-out 0.3s;
   font-size: 1.4rem;
   margin-bottom: 8rem;
 }
@@ -193,7 +201,7 @@ footer#footer #icons {
     border-bottom: solid 0.2rem #44FFA1;
   }
   #heroCard {
-    margin-bottom: 14rem;
+    z-index: 1;
   }
   #heroCard button#learnMore {
     margin-bottom: 12rem;
@@ -201,6 +209,7 @@ footer#footer #icons {
   #heroCard img#phone {
     top: 21rem;
     margin-left: auto;
+    z-index: 1;
   }
   #heroCard span#underline {
     border-bottom: solid 0.2rem #44FFA1;
@@ -208,6 +217,62 @@ footer#footer #icons {
   #heroCard button#learnMore {
     color: #24053E;
     background-color: #44FFA1;
+  }
+  #list {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    position: relative; /* Establishes a positioning context */
+    width: 100vw; /* Ensures the container matches the viewport width */
+    margin-left: calc(50% - 50vw); /* Centers the container */
+    z-index: -1;
+  }
+  #list .listContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FCF8FF;
+    width: 120vw; /* Example: making the element 20% wider than the viewport */
+    position: relative; /* Allows for positioning adjustments */
+    left: -10vw; /* Shifts the element to be centered visually */
+    border-bottom-left-radius: 100% 15%;
+    border-bottom-right-radius: 100% 15%;
+  }
+  #list .listContent .listContainer {
+    padding-top: 12rem;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    max-width: 573px;
+    align-items: center;
+  }
+  #list .listContent .listContainer .num {
+    margin-top: -1.4rem;
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    border: solid 0.1rem black;
+    border-radius: 100%;
+    padding: 0.5rem;
+    padding-inline: 1rem;
+  }
+  #list .listContent .listContainer .listCard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    align-content: start;
+    justify-content: start;
+    align-items: start;
+    max-width: 468px;
+  }
+  #list .listContent .listContainer .listCard .item {
+    font-family: "Fraunces";
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  #list .listContent .listContainer .listCard #text {
+    text-align: left !important;
+    display: block;
+    font-family: "Manrope-VariableFont_wght";
+    font-weight: 300;
   }
 }
 /* Extra large devices (large desktops) */
