@@ -70,6 +70,7 @@ body{
     background-color: $dark-purple;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
     align-items: center;
     border-bottom-left-radius: 100% 15%;
     border-bottom-right-radius: 100% 15%;
@@ -95,7 +96,7 @@ body{
         position: absolute;
         top: 17.5rem;
         margin-left: 1.5rem;
-        // right: 2.25rem;
+
         transition: ease-out 0.3s;
     }
     span#underline{
@@ -237,36 +238,38 @@ footer#footer{
             }
         }
     }
-    #heroCard{
-        // margin-bottom: -4rem;
-        // overflow-y: hidden;
-        z-index: 1;
-        button#learnMore{
-            margin-bottom: 12rem;
-
-        }
-        img#phone{
-            top: 21rem;
-            margin-left: auto;
-            z-index: 1;
-        }
-        span#underline{
-            border-bottom: solid .2rem $eucalyptus;
-        }
-        button#learnMore{
-            color: $dark-purple;
-            background-color: $eucalyptus;
+    .heroContainer{
+        // position: relative;
+        // overflow-x: visible;
+        // overflow-y: visible;
+        #heroCard{
+            margin-bottom: 0;
+            button#learnMore{
+                margin-bottom: 12rem;
+    
+            }
+            img#phone{
+                top: 21.5rem;
+                
+            }
+            span#underline{
+                border-bottom: solid .2rem $eucalyptus;
+            }
+            button#learnMore{
+                color: $dark-purple;
+                background-color: $eucalyptus;
+            }
         }
     }
     #list{
         overflow-x: hidden; /* Prevents horizontal scrolling */
-        // overflow-y: hidden; /* Prevents horizontal scrolling */
-        position: relative; /* Establishes a positioning context */
+        position: relative;
         width: 100vw; /* Ensures the container matches the viewport width */
         margin-left: calc(50% - 50vw); /* Centers the container */
-        z-index: -1;
+        z-index: -10;
         .listContent{
             display: flex;
+            overflow-x: hidden;
             align-items: center;
             flex-direction: column;
             background-color: $ghost-white;
@@ -282,11 +285,7 @@ footer#footer{
                 display: flex;
                 max-width: 573px;
                 align-items: center;
-                // justify-content: center;
-                // align-content: center;
                 
-                
-    
                 .num{
                     margin-top: -1.4rem;
                     font-size: 1.1rem;
@@ -315,6 +314,7 @@ footer#footer{
                         display: block;
                         font-family: $secondary-font;
                         font-weight: 300;
+                        line-height: 2rem;
                     }
         
                 }

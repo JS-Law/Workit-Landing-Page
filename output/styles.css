@@ -58,6 +58,7 @@ body {
   background-color: #24053E;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   align-items: center;
   border-bottom-left-radius: 100% 15%;
   border-bottom-right-radius: 100% 15%;
@@ -200,33 +201,32 @@ footer#footer #icons {
   #header #nav a#apply {
     border-bottom: solid 0.2rem #44FFA1;
   }
-  #heroCard {
-    z-index: 1;
+  .heroContainer #heroCard {
+    margin-bottom: 0;
   }
-  #heroCard button#learnMore {
+  .heroContainer #heroCard button#learnMore {
     margin-bottom: 12rem;
   }
-  #heroCard img#phone {
-    top: 21rem;
-    margin-left: auto;
-    z-index: 1;
+  .heroContainer #heroCard img#phone {
+    top: 21.5rem;
   }
-  #heroCard span#underline {
+  .heroContainer #heroCard span#underline {
     border-bottom: solid 0.2rem #44FFA1;
   }
-  #heroCard button#learnMore {
+  .heroContainer #heroCard button#learnMore {
     color: #24053E;
     background-color: #44FFA1;
   }
   #list {
     overflow-x: hidden; /* Prevents horizontal scrolling */
-    position: relative; /* Establishes a positioning context */
+    position: relative;
     width: 100vw; /* Ensures the container matches the viewport width */
     margin-left: calc(50% - 50vw); /* Centers the container */
-    z-index: -1;
+    z-index: -10;
   }
   #list .listContent {
     display: flex;
+    overflow-x: hidden;
     align-items: center;
     flex-direction: column;
     background-color: #FCF8FF;
@@ -273,6 +273,7 @@ footer#footer #icons {
     display: block;
     font-family: "Manrope-VariableFont_wght";
     font-weight: 300;
+    line-height: 2rem;
   }
 }
 /* Extra large devices (large desktops) */
