@@ -58,7 +58,18 @@ body{
         }
     }
 }
+.imageContainer{
+    
+    img#phone{
+        width: clamp(320px, 55vw, 441px);
+        position: absolute;
+        top: 19.5rem;
+        left: 50%;
+        margin-left: -10rem;
 
+        transition: ease-out 0.3s;
+    }
+}
 .heroContainer{
     overflow-x: hidden; /* Prevents horizontal scrolling */
     position: relative; /* Establishes a positioning context */
@@ -79,7 +90,7 @@ body{
     width: 120vw; /* Example: making the element 20% wider than the viewport */
     position: relative; /* Allows for positioning adjustments */
     left: -10vw; /* Shifts the element to be centered visually */
-    
+    padding-bottom: 6rem;
     h2#slogan{
         text-align: center;
         font-family: $primary-font-alt;
@@ -91,14 +102,7 @@ body{
         margin-top: 2rem;
 
     }
-    img#phone{
-        width: clamp(320px, 55vw, 441px);
-        position: absolute;
-        top: 17.5rem;
-        margin-left: 1.5rem;
 
-        transition: ease-out 0.3s;
-    }
     span#underline{
         border-bottom: solid .2rem $white;
     }
@@ -113,7 +117,7 @@ body{
         padding-block: 1rem;
         border: none;
         margin-top: 2rem;
-        margin-bottom: 9rem;
+        // margin-bottom: 9rem;
         transition: ease-in-out 0.3s;
     }
     button#learnMore:hover{
@@ -238,20 +242,27 @@ footer#footer{
             }
         }
     }
+    .imageContainer{
+        
+        
+        img#phone{
+            top: 23.5rem;
+            z-index: 10;
+            margin-left: -13rem;
+        }
+    }
     .heroContainer{
-        // position: relative;
-        // overflow-x: visible;
-        // overflow-y: visible;
+        position: relative;
+        padding-bottom: 2rem;
         #heroCard{
             margin-bottom: 0;
+            overflow-x: visible;
+            // margin-bottom: 12rem;
             button#learnMore{
-                margin-bottom: 12rem;
+                // margin-bottom: 12rem;
     
             }
-            img#phone{
-                top: 21.5rem;
-                
-            }
+
             span#underline{
                 border-bottom: solid .2rem $eucalyptus;
             }
@@ -266,10 +277,10 @@ footer#footer{
         position: relative;
         width: 100vw; /* Ensures the container matches the viewport width */
         margin-left: calc(50% - 50vw); /* Centers the container */
-        z-index: -10;
+        // z-index: -20;
         .listContent{
             display: flex;
-            overflow-x: hidden;
+
             align-items: center;
             flex-direction: column;
             background-color: $ghost-white;
