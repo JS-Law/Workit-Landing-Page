@@ -50,7 +50,7 @@ body {
 .imageContainer img#phone {
   width: clamp(320px, 55vw, 441px);
   position: absolute;
-  top: 19.5rem;
+  top: 23.5rem;
   left: 50%;
   margin-left: -10rem;
   transition: ease-out 0.3s;
@@ -71,11 +71,11 @@ body {
   align-items: center;
   border-bottom-left-radius: 100% 15%;
   border-bottom-right-radius: 100% 15%;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
   width: 120vw; /* Example: making the element 20% wider than the viewport */
   position: relative; /* Allows for positioning adjustments */
   left: -10vw; /* Shifts the element to be centered visually */
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
 }
 #heroCard h2#slogan {
   text-align: center;
@@ -83,7 +83,7 @@ body {
   font-size: clamp(3rem, 8vw, 4rem);
   font-weight: 500;
   color: #FFFFFF;
-  width: clamp(353px, 45vw, 573px);
+  width: clamp(353px, 45vw, 519px);
   margin-top: 2rem;
 }
 #heroCard span#underline {
@@ -204,17 +204,20 @@ footer#footer #icons {
     border-bottom: solid 0.2rem #44FFA1;
   }
   .imageContainer img#phone {
-    top: 23.5rem;
+    top: 26.5rem;
     z-index: 10;
     margin-left: -13rem;
   }
   .heroContainer {
     position: relative;
-    padding-bottom: 2rem;
   }
   .heroContainer #heroCard {
     margin-bottom: 0;
     overflow-x: visible;
+    padding-bottom: 3.5rem;
+  }
+  .heroContainer #heroCard button#learnMore {
+    margin-bottom: 8rem;
   }
   .heroContainer #heroCard span#underline {
     border-bottom: solid 0.2rem #44FFA1;
@@ -239,9 +242,11 @@ footer#footer #icons {
     left: -10vw; /* Shifts the element to be centered visually */
     border-bottom-left-radius: 100% 15%;
     border-bottom-right-radius: 100% 15%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
   #list .listContent .listContainer {
-    padding-top: 12rem;
+    padding-top: 4rem;
     text-align: center;
     font-weight: 500;
     display: flex;
@@ -260,7 +265,6 @@ footer#footer #icons {
   #list .listContent .listContainer .listCard {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
     align-content: start;
     justify-content: start;
     align-items: start;
