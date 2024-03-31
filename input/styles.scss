@@ -232,6 +232,22 @@ footer#footer{
 
 /* Large devices (tablets to small desktops) */
 @media (min-width: 540px) {
+    footer#footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #logo{
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+        }
+        #icons{
+            display: block;
+            .icon{
+                margin-inline: .7rem;
+                margin-bottom: 8rem;
+            }
+        }
+    }
     #bigSpringLeft{
         position: absolute;
         display: block;
@@ -245,6 +261,13 @@ footer#footer{
         top:11.5rem;
         right: -6rem;
         overflow: hidden;
+    }
+    #smallSpringLeft{
+        position: absolute;
+        display: block;
+        z-index: 200;
+        top: 114rem;
+        right: 5%;
     }
     #header{
         padding-top: 3rem;
@@ -360,7 +383,7 @@ footer#footer{
             display: block;
             z-index: -1;
             margin-bottom: -4rem;
-            margin-left: -23rem;
+            margin-left: -18rem;
         }
         img#authorImageMobile{
             width: clamp(250px, 75vw, 250px);
@@ -370,11 +393,15 @@ footer#footer{
         }
     }
     .testCard{
-        margin-left: 17rem;
+        margin-left: 35%;
+        max-width: 450px;
+        align-items: start;
+        padding: 1rem;
         #testTitle{
             font-family: $primary-font-alt;
             font-size: 2rem;
             margin-top: 2rem;
+            margin-left: 2rem;
         }
         #bio{
             font-family: $secondary-font;
@@ -382,10 +409,12 @@ footer#footer{
             line-height: 1.5rem;
             font-weight: 300;
             font-size: .9rem;
+            text-align: left;
         }
         button#applyBtn{
+            margin-left: 2rem;
             color: $dark-purple;
-            background-color: $white;
+            background-color: $eucalyptus;
             outline: none;
             padding-inline: 2rem;
             padding-block: 1rem;
