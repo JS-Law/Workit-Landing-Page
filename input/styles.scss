@@ -29,6 +29,7 @@ $white: #FFFFFF;
 body{
     -webkit-font-smoothing: antialiased;
     background-color: white;
+
 }
 
 #bigSpringLeft, #smallSpringLeft, #springRight{
@@ -65,7 +66,7 @@ body{
         position: absolute;
         top: 23.5rem;
         left: 50%;
-        margin-left: -10rem;
+        margin-left: -9.5rem;
 
         transition: ease-out 0.3s;
     }
@@ -141,7 +142,7 @@ body{
         }
         .num{
             // transition: ease-in 0.3s;
-            margin-bottom: -2rem;
+            margin-bottom: 2rem;
             font-size: 1.1rem;
 
         }
@@ -241,8 +242,9 @@ footer#footer{
         position: absolute;
         display: block;
         z-index: 200;
-        top:16.5rem;
+        top:11.5rem;
         right: -6rem;
+        overflow: hidden;
     }
     #header{
         padding-top: 3rem;
@@ -292,7 +294,7 @@ footer#footer{
         position: relative;
         width: 100vw; /* Ensures the container matches the viewport width */
         margin-left: calc(50% - 50vw); /* Centers the container */
-        // z-index: -20;
+        margin-bottom: 4rem;
         .listContent{
             display: flex;
             align-items: center;
@@ -347,6 +349,52 @@ footer#footer{
                 }
             }
     
+        }
+    }
+    #authorImageCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img#authorImage{
+            width: clamp(250px, 75vw, 250px);
+            display: block;
+            z-index: -1;
+            margin-bottom: -4rem;
+            margin-left: -23rem;
+        }
+        img#authorImageMobile{
+            width: clamp(250px, 75vw, 250px);
+            margin-top: 8rem;
+            z-index: -1;
+            display: none;
+        }
+    }
+    .testCard{
+        margin-left: 17rem;
+        #testTitle{
+            font-family: $primary-font-alt;
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        #bio{
+            font-family: $secondary-font;
+            margin: 2rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+            font-size: .9rem;
+        }
+        button#applyBtn{
+            color: $dark-purple;
+            background-color: $white;
+            outline: none;
+            padding-inline: 2rem;
+            padding-block: 1rem;
+            border: none;
+    
+            margin-bottom: 2rem;
+        }
+        button#applyBtn:hover{
+            background-color: $eucalyptus;
         }
     }
 }

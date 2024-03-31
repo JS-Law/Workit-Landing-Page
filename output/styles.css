@@ -52,7 +52,7 @@ body {
   position: absolute;
   top: 23.5rem;
   left: 50%;
-  margin-left: -10rem;
+  margin-left: -9.5rem;
   transition: ease-out 0.3s;
 }
 
@@ -123,7 +123,7 @@ body {
   transition: ease-in-out 0.3s;
 }
 .listContent .listContainer .num {
-  margin-bottom: -2rem;
+  margin-bottom: 2rem;
   font-size: 1.1rem;
 }
 .listContent .listContainer .item {
@@ -207,8 +207,9 @@ footer#footer #icons {
     position: absolute;
     display: block;
     z-index: 200;
-    top: 16.5rem;
+    top: 11.5rem;
     right: -6rem;
+    overflow: hidden;
   }
   #header {
     padding-top: 3rem;
@@ -248,6 +249,7 @@ footer#footer #icons {
     position: relative;
     width: 100vw; /* Ensures the container matches the viewport width */
     margin-left: calc(50% - 50vw); /* Centers the container */
+    margin-bottom: 4rem;
   }
   #list .listContent {
     display: flex;
@@ -299,6 +301,51 @@ footer#footer #icons {
     font-family: "Manrope-VariableFont_wght";
     font-weight: 300;
     line-height: 2rem;
+  }
+  #authorImageCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #authorImageCard img#authorImage {
+    width: clamp(250px, 75vw, 250px);
+    display: block;
+    z-index: -1;
+    margin-bottom: -4rem;
+    margin-left: -23rem;
+  }
+  #authorImageCard img#authorImageMobile {
+    width: clamp(250px, 75vw, 250px);
+    margin-top: 8rem;
+    z-index: -1;
+    display: none;
+  }
+  .testCard {
+    margin-left: 17rem;
+  }
+  .testCard #testTitle {
+    font-family: "Fraunces";
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .testCard #bio {
+    font-family: "Manrope-VariableFont_wght";
+    margin: 2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  .testCard button#applyBtn {
+    color: #24053E;
+    background-color: #FFFFFF;
+    outline: none;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border: none;
+    margin-bottom: 2rem;
+  }
+  .testCard button#applyBtn:hover {
+    background-color: #44FFA1;
   }
 }
 /* Extra large devices (large desktops) */
