@@ -72,6 +72,7 @@ body {
   border-bottom-left-radius: 100% 15%;
   border-bottom-right-radius: 100% 15%;
   margin-bottom: 12rem;
+  box-shadow: #FCF8FF;
   width: 120vw; /* Example: making the element 20% wider than the viewport */
   position: relative; /* Allows for positioning adjustments */
   left: -10vw; /* Shifts the element to be centered visually */
@@ -122,7 +123,7 @@ body {
   transition: ease-in-out 0.3s;
 }
 .listContent .listContainer .num {
-  margin-bottom: 2rem;
+  margin-bottom: -2rem;
   font-size: 1.1rem;
 }
 .listContent .listContainer .item {
@@ -196,6 +197,19 @@ footer#footer #icons {
 
 /* Large devices (tablets to small desktops) */
 @media (min-width: 540px) {
+  #bigSpringLeft {
+    position: absolute;
+    display: block;
+    z-index: 200;
+    left: -13.5rem;
+  }
+  #springRight {
+    position: absolute;
+    display: block;
+    z-index: 200;
+    top: 16.5rem;
+    right: -6rem;
+  }
   #header {
     padding-top: 3rem;
     padding: 2rem;
@@ -215,6 +229,9 @@ footer#footer #icons {
     margin-bottom: 0;
     overflow-x: visible;
     padding-bottom: 3.5rem;
+    -webkit-box-shadow: 0px 14px 0px 15px rgb(252, 248, 255);
+    -moz-box-shadow: 0px 14px 0px 15px rgb(252, 248, 255);
+    box-shadow: 0px 14px 0px 15px rgb(252, 248, 255);
   }
   .heroContainer #heroCard button#learnMore {
     margin-bottom: 8rem;
