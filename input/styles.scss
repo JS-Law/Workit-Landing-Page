@@ -300,7 +300,7 @@ footer#footer{
             box-shadow: 0px 14px 0px 15px rgba(252,248,255,1);
             button#learnMore{
                 margin-bottom: 8rem;
-
+                border: solid 2px $dark-purple;
             }
 
             span#underline{
@@ -430,5 +430,124 @@ footer#footer{
 
 /* Extra large devices (large desktops) */
 @media (min-width: 730px) {
+    #header{
+        background-color: $dark-purple;
+        padding: 1rem;
+        padding-top: 3rem;
+        padding-inline: 12%;
+        transition: ease-in-out 0.3ms;
+    
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            a#apply{
+                font-family: $secondary-font;
+                text-decoration: none;
+                color: $ghost-white;
+                border-bottom: solid .2rem $white;
+                font-size: 16px;
+                font-weight: 500;
+                border-bottom: solid .2rem $eucalyptus;
+            }
+            a#apply:hover{
+                color: $eucalyptus;
+            }
+        }
+    }
+    .heroContainer{
+        position: relative;
+        #heroCard{
+            margin-bottom: 0;
+            overflow-x: visible;
+            padding-bottom: 3.5rem;
+            -webkit-box-shadow: 0px 14px 0px 15px rgba(252,248,255,1);
+            -moz-box-shadow: 0px 14px 0px 15px rgba(252,248,255,1);
+            box-shadow: 0px 14px 0px 15px rgba(252,248,255,1);
+            button#learnMore{
+                margin-bottom: 8rem;
 
+            }
+
+            span#underline{
+                border-bottom: solid .2rem $eucalyptus;
+            }
+            button#learnMore{
+                color: $dark-purple;
+                background-color: $eucalyptus;
+            }
+            button#learnMore:hover{
+                background-color: $dark-purple;
+                color: $eucalyptus;
+                border: solid 2px $eucalyptus;
+            }
+        }
+    }
+    #list{
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+        position: relative;
+        width: 100vw; /* Ensures the container matches the viewport width */
+        margin-left: calc(50% - 50vw); /* Centers the container */
+        margin-bottom: 4rem;
+        .listContent{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-inline: 13rem;
+            background-color: $ghost-white;
+            width: 120vw; /* Example: making the element 20% wider than the viewport */
+            position: relative; /* Allows for positioning adjustments */
+            left: -10vw; /* Shifts the element to be centered visually */
+            border-bottom-left-radius: 100% 15%;
+            border-bottom-right-radius: 100% 15%;
+            // margin-top: -2rem;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+            .listContainer{
+                padding-inline: 1rem;
+                padding-top: 4rem;
+                text-align: center;
+                font-weight: 500;
+                display: flex;
+                flex-direction: column;
+                max-width: 573px;
+                justify-content: center;
+                align-items: center;
+
+                .num{
+                    margin-top: -1.4rem;
+                    font-size: 1.1rem;
+                    margin-right: 2rem;
+                    border: solid .1rem black;
+                    border-radius: 100%;
+                    padding: .5rem;
+                    padding-inline: 1rem;
+                }
+                .listCard{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    max-width: 468px;
+                    .item{
+                        font-family: $primary-font-alt;
+                        font-size: 1.6rem;
+                        margin-bottom: 1rem;
+                        text-align: left;
+                    }
+                    #text{
+                        text-align: center !important;
+                        display: block;
+                        font-family: $secondary-font;
+                        font-weight: 300;
+                        line-height: 2rem;
+                    }
+        
+                }
+            }
+    
+        }
+    }
 }

@@ -259,6 +259,7 @@ footer#footer #icons {
   }
   .heroContainer #heroCard button#learnMore {
     margin-bottom: 8rem;
+    border: solid 2px #24053E;
   }
   .heroContainer #heroCard span#underline {
     border-bottom: solid 0.2rem #44FFA1;
@@ -378,5 +379,120 @@ footer#footer #icons {
   }
 }
 /* Extra large devices (large desktops) */
+@media (min-width: 730px) {
+  #header {
+    background-color: #24053E;
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-inline: 12%;
+    transition: ease-in-out 0.3ms;
+  }
+  #header #nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  #header #nav a#apply {
+    font-family: "Manrope-VariableFont_wght";
+    text-decoration: none;
+    color: #FCF8FF;
+    border-bottom: solid 0.2rem #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: solid 0.2rem #44FFA1;
+  }
+  #header #nav a#apply:hover {
+    color: #44FFA1;
+  }
+  .heroContainer {
+    position: relative;
+  }
+  .heroContainer #heroCard {
+    margin-bottom: 0;
+    overflow-x: visible;
+    padding-bottom: 3.5rem;
+    -webkit-box-shadow: 0px 14px 0px 15px rgb(252, 248, 255);
+    -moz-box-shadow: 0px 14px 0px 15px rgb(252, 248, 255);
+    box-shadow: 0px 14px 0px 15px rgb(252, 248, 255);
+  }
+  .heroContainer #heroCard button#learnMore {
+    margin-bottom: 8rem;
+  }
+  .heroContainer #heroCard span#underline {
+    border-bottom: solid 0.2rem #44FFA1;
+  }
+  .heroContainer #heroCard button#learnMore {
+    color: #24053E;
+    background-color: #44FFA1;
+  }
+  .heroContainer #heroCard button#learnMore:hover {
+    background-color: #24053E;
+    color: #44FFA1;
+    border: solid 2px #44FFA1;
+  }
+  #list {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    position: relative;
+    width: 100vw; /* Ensures the container matches the viewport width */
+    margin-left: calc(50% - 50vw); /* Centers the container */
+    margin-bottom: 4rem;
+  }
+  #list .listContent {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 13rem;
+    background-color: #FCF8FF;
+    width: 120vw; /* Example: making the element 20% wider than the viewport */
+    position: relative; /* Allows for positioning adjustments */
+    left: -10vw; /* Shifts the element to be centered visually */
+    border-bottom-left-radius: 100% 15%;
+    border-bottom-right-radius: 100% 15%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  #list .listContent .listContainer {
+    padding-inline: 1rem;
+    padding-top: 4rem;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    max-width: 573px;
+    justify-content: center;
+    align-items: center;
+  }
+  #list .listContent .listContainer .num {
+    margin-top: -1.4rem;
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    border: solid 0.1rem black;
+    border-radius: 100%;
+    padding: 0.5rem;
+    padding-inline: 1rem;
+  }
+  #list .listContent .listContainer .listCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 468px;
+  }
+  #list .listContent .listContainer .listCard .item {
+    font-family: "Fraunces";
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  #list .listContent .listContainer .listCard #text {
+    text-align: center !important;
+    display: block;
+    font-family: "Manrope-VariableFont_wght";
+    font-weight: 300;
+    line-height: 2rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
