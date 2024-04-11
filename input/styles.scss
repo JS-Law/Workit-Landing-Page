@@ -429,7 +429,7 @@ footer#footer{
 }
 
 /* Extra large devices (large desktops) */
-@media (min-width: 730px) {
+@media (min-width: 830px) {
     #header{
         background-color: $dark-purple;
         padding: 1rem;
@@ -465,9 +465,7 @@ footer#footer{
             box-shadow: 0px 14px 0px 15px rgba(252,248,255,1);
             button#learnMore{
                 margin-bottom: 8rem;
-
             }
-
             span#underline{
                 border-bottom: solid .2rem $eucalyptus;
             }
@@ -482,6 +480,7 @@ footer#footer{
             }
         }
     }
+
     #list{
         overflow-x: hidden; /* Prevents horizontal scrolling */
         position: relative;
@@ -525,7 +524,6 @@ footer#footer{
                     padding-inline: 1rem;
                 }
                 .listCard{
-
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -551,4 +549,58 @@ footer#footer{
     
         }
     }
+
+    #authorImageCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img#authorImage{
+            width: clamp(450px, 100vw, 250px);
+            display: block;
+            z-index: -1;
+            margin-bottom: -14rem;
+            margin-left: -28rem;
+        }
+        img#authorImageMobile{
+            width: clamp(250px, 75vw, 250px);
+            margin-top: 8rem;
+            z-index: -1;
+            display: none;
+        }
+    }
+    .testCard{
+        margin-left: 45%;
+        max-width: 625px;
+        align-items: start;
+        padding: 1rem;
+        #testTitle{
+            font-family: $primary-font-alt;
+            font-size: 2rem;
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+        #bio{
+            font-family: $secondary-font;
+            margin: 2rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+            font-size: .9rem;
+            text-align: left;
+        }
+        button#applyBtn{
+            margin-left: 2rem;
+            color: $dark-purple;
+            background-color: $eucalyptus;
+            outline: none;
+            padding-inline: 2rem;
+            padding-block: 1rem;
+            border: none;
+    
+            margin-bottom: 2rem;
+        }
+        button#applyBtn:hover{
+            background-color: $dark-purple;
+        }
+    }
+
 }
