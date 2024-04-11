@@ -492,11 +492,12 @@ footer#footer{
             display: flex;
             align-items: center;
             flex-direction: row;
-            align-items: center;
+            align-items: start;
             justify-content: center;
             padding-inline: 13rem;
             background-color: $ghost-white;
-            width: 120vw; /* Example: making the element 20% wider than the viewport */
+            width: 120vw; /* Example: making the element 20% wider than the
+             viewport */
             position: relative; /* Allows for positioning adjustments */
             left: -10vw; /* Shifts the element to be centered visually */
             border-bottom-left-radius: 100% 15%;
@@ -512,25 +513,25 @@ footer#footer{
                 display: flex;
                 flex-direction: column;
                 max-width: 573px;
-                justify-content: center;
+                justify-content: start;
                 align-items: center;
-
                 .num{
                     margin-top: -1.4rem;
                     font-size: 1.1rem;
-                    margin-right: 2rem;
+                    margin-right: 0;
                     border: solid .1rem black;
                     border-radius: 100%;
                     padding: .5rem;
                     padding-inline: 1rem;
                 }
                 .listCard{
+
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-content: center;
                     align-items: center;
-                    max-width: 468px;
+                    max-width: 338px;
                     .item{
                         font-family: $primary-font-alt;
                         font-size: 1.6rem;
