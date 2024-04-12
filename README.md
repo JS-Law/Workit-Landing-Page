@@ -12,11 +12,8 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -38,6 +35,8 @@ Users should be able to:
 
 ## My process
 
+I started by approaching the project with a mobile first workflow. Gradually styling each breakpoint until I was satisfied.
+I used SASS to style my HTML an
 
 
 ### Built with
@@ -45,31 +44,30 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- SASSS
+- SASS
 - Mobile-first workflow
-
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Emmet
 
 ### What I learned
+
+I learned alot during this project. I learned that I need to do a better job of keeping my CSS clean and that I should refactor more often and not at the end of a project like I had here. This was my first project with 3 breakpoints and it was definitely a hurdle for me to overcome but in that process, I also learned alot of about absolute position and the need to keep my `z-index` organized. 
 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In the future I will make a large effort to keep my code cleaner, as if a psychopathic programmer is the next to maintain it, who will hunt me down if its not clean.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Jeff Stanley](https://js-law.github.io/portfolio/)
+- Frontend Mentor - [@JS-Law](https://www.frontendmentor.io/profile/JS-Law)
+- Twitter - [@JustDevPosts](https://www.twitter.com/JustDevPosts)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I gotta shout out:
+- FrontendMentor
+- StackOverflow
+- X
+- 
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
