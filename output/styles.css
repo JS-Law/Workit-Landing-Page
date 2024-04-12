@@ -213,6 +213,9 @@ footer#footer #icons {
     margin-inline: 0.7rem;
     margin-bottom: 8rem;
   }
+  footer#footer #icons .icon:hover {
+    color: #24053E;
+  }
   #bigSpringLeft {
     position: absolute;
     display: block;
@@ -554,6 +557,16 @@ viewport */
   .testCard button#applyBtn:hover {
     background-color: #24053E;
     color: #44FFA1;
+  }
+  #icons {
+    display: block;
+  }
+  #icons .icon {
+    margin-inline: 0.7rem;
+    margin-bottom: 8rem;
+  }
+  #icons .icon:hover {
+    color: #24053E;
   }
 }
 

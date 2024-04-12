@@ -246,6 +246,9 @@ footer#footer{
                 margin-inline: .7rem;
                 margin-bottom: 8rem;
             }
+            .icon:hover{
+                color: $dark-purple;
+            }
         }
     }
     #bigSpringLeft{
@@ -612,5 +615,14 @@ footer#footer{
             color: $eucalyptus;
         }
     }
-
+    #icons{
+        display: block;
+        .icon{
+            margin-inline: .7rem;
+            margin-bottom: 8rem;
+        }
+        .icon:hover{
+            color: $dark-purple;
+        }
+    }
 }
