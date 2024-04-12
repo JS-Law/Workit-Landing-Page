@@ -69,5 +69,4 @@ I gotta shout out:
 - FrontendMentor
 - StackOverflow
 - X
-- 
 
