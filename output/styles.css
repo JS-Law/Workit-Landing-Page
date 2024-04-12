@@ -379,7 +379,14 @@ footer#footer #icons {
   }
 }
 /* Extra large devices (large desktops) */
-@media (min-width: 830px) {
+@media (min-width: 1030px) {
+  #smallSpringLeft {
+    position: absolute;
+    display: block;
+    z-index: 200;
+    top: 96.5rem;
+    right: 15%;
+  }
   #header {
     background-color: #24053E;
     padding: 1rem;
@@ -517,16 +524,18 @@ viewport */
     max-width: 625px;
     align-items: start;
     padding: 1rem;
+    padding-block: 1.5rem;
   }
   .testCard #testTitle {
     font-family: "Fraunces";
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 2rem;
     margin-left: 2rem;
   }
   .testCard #bio {
     font-family: "Manrope-VariableFont_wght";
     margin: 2rem;
+    margin-top: 1.75rem;
     line-height: 1.5rem;
     font-weight: 300;
     font-size: 0.9rem;
@@ -539,11 +548,12 @@ viewport */
     outline: none;
     padding-inline: 2rem;
     padding-block: 1rem;
-    border: none;
+    border: 1px solid #44FFA1;
     margin-bottom: 2rem;
   }
   .testCard button#applyBtn:hover {
     background-color: #24053E;
+    color: #44FFA1;
   }
 }
 

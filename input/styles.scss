@@ -429,7 +429,14 @@ footer#footer{
 }
 
 /* Extra large devices (large desktops) */
-@media (min-width: 830px) {
+@media (min-width: 1030px) {
+    #smallSpringLeft{
+        position: absolute;
+        display: block;
+        z-index: 200;
+        top: 96.5rem;
+        right: 15%;
+    }
     #header{
         background-color: $dark-purple;
         padding: 1rem;
@@ -573,15 +580,17 @@ footer#footer{
         max-width: 625px;
         align-items: start;
         padding: 1rem;
+        padding-block: 1.5rem;
         #testTitle{
             font-family: $primary-font-alt;
-            font-size: 2rem;
+            font-size: 3rem;
             margin-top: 2rem;
             margin-left: 2rem;
         }
         #bio{
             font-family: $secondary-font;
             margin: 2rem;
+            margin-top: 1.75rem;
             line-height: 1.5rem;
             font-weight: 300;
             font-size: .9rem;
@@ -594,12 +603,13 @@ footer#footer{
             outline: none;
             padding-inline: 2rem;
             padding-block: 1rem;
-            border: none;
+            border: 1px solid $eucalyptus;
     
             margin-bottom: 2rem;
         }
         button#applyBtn:hover{
             background-color: $dark-purple;
+            color: $eucalyptus;
         }
     }
 
